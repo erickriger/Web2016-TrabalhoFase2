@@ -4,4 +4,34 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>InicialController</servlet-name>
+  	<display-name>InicialController</display-name>
+  	<description></description>
+  	<servlet-class>controller.InicialController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UsuarioController</servlet-name>
+  	<display-name>UsuarioController</display-name>
+  	<description></description>
+  	<servlet-class>controller.UsuarioController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ProjetoController</servlet-name>
+  	<display-name>ProjetoController</display-name>
+  	<description></description>
+  	<servlet-class>banco.ProjetoController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>InicialController</servlet-name>
+  	<url-pattern>/InicialController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UsuarioController</servlet-name>
+  	<url-pattern>/UsuarioController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ProjetoController</servlet-name>
+  	<url-pattern>/ProjetoController</url-pattern>
+  </servlet-mapping>
 </web-app>
